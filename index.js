@@ -19,7 +19,7 @@ function nowServing(katzDeli, name) {
 function currentLine(katzDeliLine) {
   if (katzDeli.length > 0) {
     katzDeli.join(", ")
-      return `The line is currently: ${katzDeli}`
+      return `The line is currently: ${katzDeli.join(", "}`
   } else {
       return "The line is currently empty."
   }
