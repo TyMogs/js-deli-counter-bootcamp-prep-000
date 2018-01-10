@@ -14,13 +14,14 @@ function nowServing(katzDeli, name) {
   }
 }
 
+var KatzDeliLine = []
 function currentLine(katzDeli) {
   for (var i = 0; i < katzDeli.length; i++) {
-    katzDeli.push(` ${i+1}. ${katzDeli[i]}, `)
-    if (katzDeli.length > 0) {
-      return `The line is currently: ${katzDeli}`
-  } else {
+    katzDeliLine.push(` ${i+1}. ${katzDeli[i]}, `)
+    if (katzDeli.length === 0) {
       return "The line is currently empty."
+  } else {
+      return `The line is currently empty: ${katzDeliLine}`
   }
  }
 }
