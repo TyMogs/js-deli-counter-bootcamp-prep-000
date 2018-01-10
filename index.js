@@ -10,3 +10,8 @@ function nowServing(name) {
   return katzDeli[0]
   katzDeli.shift(name)
 }
+
+function currentLine(katzDeliLine) {
+  katzDeli.join(", ")
+  return `The line is currently: ${katzDeli}`
+}
