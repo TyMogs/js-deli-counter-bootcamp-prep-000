@@ -16,9 +16,9 @@ function nowServing(katzDeli, name) {
 
 function currentLine(katzDeli) {
   for (var i = 0; i < katzDeli.length; i++) {
+    katzDeli.push(`${i+1}. ${katzDeli[i]}`)
     if (katzDeli.length > 0) {
-      katzDeli.join(", ")
-        return `${i+1}. ${katzDeli[i]}`
+      return katzDeli.join(", ")
   } else {
       return "The line is currently empty."
   }
