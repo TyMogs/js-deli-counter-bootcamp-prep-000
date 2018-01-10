@@ -14,7 +14,7 @@ function nowServing(katzDeli, name) {
   }
 }
 
-var KatzDeliLine = []
+var katzDeliLine = []
 
 function currentLine(katzDeli) {
   for (var i = 0; i < katzDeli.length; i++) {
