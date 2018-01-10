@@ -5,3 +5,8 @@ function takeANumber(katzDeliLine, name) {
   katzDeli = katzDeliLine.push(name);
   return katzDeli[i+1];
 }
+
+function nowServing(name) {
+  return katzDeli[0]
+  katzDeli.shift(name)
+}
